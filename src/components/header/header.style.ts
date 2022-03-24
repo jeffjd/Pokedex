@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Layout = styled.header`
     background-color: var(--mikado-yellow);
     color: var(--rich-black-frogra-39);
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -10,6 +12,7 @@ export const Layout = styled.header`
     grid-template-areas:
         "head head"
         "home pokedex";
+
     .grid.head {
         grid-area: head;
     }
