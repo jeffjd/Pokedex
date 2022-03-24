@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-export const Layout = styled.header`
+export const HeaderLayout = styled.header`
     background-color: var(--mikado-yellow);
     color: var(--rich-black-frogra-39);
+    height: 15vh;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
     display: grid;

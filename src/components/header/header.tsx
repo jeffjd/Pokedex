@@ -1,9 +1,9 @@
 import React from "react";
-import { Layout } from "./header.style";
+import { HeaderLayout } from "./header.style";
 
 const Header = () => {
     return (
-        <Layout className="header">
+        <HeaderLayout className="header">
             <div className="grid head">
                 <p>Logo pokemon</p>
             </div>
@@ -13,7 +13,7 @@ const Header = () => {
             <div className="grid pokedex">
                 <button type="button">Pokedex</button>
             </div>
-        </Layout>
+        </HeaderLayout>
     );
 };
 
