@@ -7,6 +7,7 @@ import Footer from "../footer";
 
 import Home from "../page/home";
 import Pokedex from "../page/pokedex";
+import Error404 from "../page/error404";
 
 const RootElement = () => {
     return (
@@ -17,6 +18,7 @@ const RootElement = () => {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/pokedex" element={<Pokedex />} />
+                        <Route path="/*" element={<Error404 />} />
                     </Routes>
                 </SectionLayout>
                 <Footer />
