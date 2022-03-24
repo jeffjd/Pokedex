@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Container } from "./routes.style";
+import { MainLayout, SectionLayout } from "./routes.style";
 
 import Header from "../header";
 import Footer from "../footer";
@@ -10,15 +10,15 @@ import Home from "../page/home";
 const RootElement = () => {
     return (
         <BrowserRouter>
-            <Container>
+            <MainLayout>
                 <Header />
-                <div className="content">
+                <SectionLayout className="content">
                     <Routes>
                         <Route path="/" element={<Home />} />
                     </Routes>
-                </div>
+                </SectionLayout>
                 <Footer />
-            </Container>
+            </MainLayout>
         </BrowserRouter>
     );
 };
