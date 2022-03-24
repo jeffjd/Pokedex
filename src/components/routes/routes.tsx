@@ -6,6 +6,7 @@ import Header from "../header";
 import Footer from "../footer";
 
 import Home from "../page/home";
+import Pokedex from "../page/pokedex";
 
 const RootElement = () => {
     return (
@@ -15,6 +16,7 @@ const RootElement = () => {
                 <SectionLayout className="content">
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/pokedex" element={<Pokedex />} />
                     </Routes>
                 </SectionLayout>
                 <Footer />
